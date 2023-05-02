@@ -1,0 +1,152 @@
+TABLE OF CONTENTS
+Inner first page……………………………………………………………………….(i)
+ PAC form……………………………………………………………………………(ii)
+Declaration…...……………………………………………………………………..(iii)
+Certificate……..…….………………………………………………………………(iv)
+Acknowledgement…………………...………………………………………….......(v)
+Table of Contents……………………...……………………………………………(vi)
+1. Introduction………………………………………………………………………..7
+2. Problem Statement…………………………………………..……………………8
+3. Existing System……………………………………………………………………9
+	3.1 Introduction
+	3.2 Exiting Software
+4. Problem Analysis……………………………………………………………………10
+4.1 Product Definition
+	4.2 Feasibility Analysis
+ 5. Software Requirement Analysis……………………………………………………11
+	5.1 Introduction
+	5.2 General Description
+	  5.3Specific Requirements
+6.Design……………………………………………………………………….12
+	6.1 System Design
+7.Testing………………………………………………………………………………13
+	7.1Functional Testing
+	7.2structural testing
+8.User Manual: Rock-Paper-Scissors Game…………………………………………14
+9.Sourcecode…………………………………………………………………………..15
+1 Introduction
+Rock Paper Scissors is a classic hand game that has been enjoyed by people of all ages for generations. In this game, two players make simultaneous hand gestures representing rock, paper, or scissors, and the winner is determined by a set of predetermined rules: rock beats scissors, scissors beats paper, and paper beats rock.
+Using the Tkinter library in Python, we can create a simple graphical user interface (GUI) to implement the Rock Paper Scissors game. With Tkinter, we can create buttons for each hand gesture, display the results of each game, and keep score of the overall game.
+Below are two subheadings that will be discussed in this tutorial:
+1.1	Creating the GUI with Tkinter:
+ In this section, we will cover how to create a simple GUI for the Rock Paper Scissors game using Tkinter. We will create buttons for each hand gesture and add functionality to them so that they can interact with the game logic. We will also create a scoreboard to keep track of the overall game score.
+1.2	Implementing the game logic: 
+In this section, we will implement the game logic for the Rock Paper Scissors game. We will define the rules for determining the winner of each game, and update the scoreboard accordingly. We will also add functionality to reset the game and start a new round.
+
+
+
+
+
+
+
+
+2. Problem Statement
+Rock Paper Scissors is a popular game enjoyed by people of all ages, but it can be difficult to keep track of the score and results when playing multiple games. Without a proper scoring system or game logic, players may become frustrated or lose interest in the game.
+Rationale:
+The purpose of this study is to develop a simple and user-friendly graphical interface using the Tkinter library in Python to create a Rock Paper Scissors game that is easy to play and keep score. The implementation of a GUI will allow players to easily select their hand gestures, view the results of each game, and keep track of their score throughout the duration of the game. Additionally, by implementing the game logic in Python, we can ensure that the game follows the standard rules and provides a fair and enjoyable experience for all players.
+Scope of the study:
+This study aims to develop a simple and user-friendly graphical interface using the Tkinter library in Python to create a Rock Paper Scissors game that allows for easy gameplay and scorekeeping. The implementation will include a GUI with buttons for each hand gesture, a scoreboard to track the overall game score, and game logic to determine the winner of each game. The scope of this study does not include advanced features such as multiplayer or artificial intelligence opponents, as the focus is on creating a basic and functional Rock Paper Scissors game for single players.
+
+
+
+
+
+
+
+
+3. Existing System
+3.1 Introduction:
+Rock Paper Scissors is a classic hand game that has been played for generations, and there are many ways to play the game without the use of software. Players can simply use their hands to make the rock, paper, or scissors gesture and determine the winner based on the rules. However, playing the game without a scoring system or game logic can make it difficult to keep track of the score and results.
+
+3.2 Existing Software:
+There are various software applications available online that allow users to play Rock Paper Scissors with a computer or other players online. Some examples include:
+
+Rock Paper Scissors Lizard Spock: This is a web-based game that allows players to play Rock Paper Scissors with an additional two hand gestures (Lizard and Spock) from the television show "The Big Bang Theory." The game can be played against the computer or with another player online.
+
+Rock Paper Scissors Game: This is a simple web-based game that allows players to play Rock Paper Scissors against the computer. The game includes a scoring system and keeps track of the overall score throughout multiple rounds.
+
+Rock Paper Scissors Simulator: This is a software application that can be downloaded to a computer and allows players to play Rock Paper Scissors against a computer opponent. The game includes a scoring system and various difficulty levels for the computer opponent.
+
+While these existing software applications provide a way to play Rock Paper Scissors, they may not always provide a user-friendly interface or an accurate representation of the game's rules. Additionally, some applications may require an internet connection or a download, which can be inconvenient for some users. Therefore, developing a simple and user-friendly graphical interface using the Tkinter library in Python can provide an alternative solution for players to enjoy the game without relying on external software or an internet connection.
+
+4. Problem Analysis
+4.1 Product Definition:
+The goal of this project is to create a Rock Paper Scissors game using the Tkinter library in Python that provides a simple and user-friendly graphical interface for players to easily select their hand gestures, view the results of each game, and keep track of their score throughout the duration of the game. The implementation will include a GUI with buttons for each hand gesture, a scoreboard to track the overall game score, and game logic to determine the winner of each game.
+
+4.2 Feasibility Analysis:
+4.2.1Technical Feasibility:
+The technical feasibility of this project is high, as the implementation of the Rock Paper Scissors game using the Tkinter library in Python is relatively straightforward. The Tkinter library provides an easy-to-use interface for creating buttons, displaying text, and updating the score, making it a suitable choice for this project. Additionally, the game logic for Rock Paper Scissors is simple and can be easily implemented using Python.
+
+4.2.2Economic Feasibility:
+The economic feasibility of this project is also high, as the implementation does not require any expensive hardware or software. The only requirement is a computer with Python installed, which is freely available. Therefore, the cost of implementing this project is minimal.
+
+4.2.3Operational Feasibility:
+The operational feasibility of this project is high, as the game is easy to use and requires minimal training. The graphical interface provided by Tkinter is user-friendly and can be easily navigated by players of all ages. Additionally, the game logic is standard and follows the rules of traditional Rock Paper Scissors, making it easy for players to understand and play.
+
+Overall, the feasibility analysis indicates that the implementation of a Rock Paper Scissors game using the Tkinter library in Python is a viable and practical solution for creating a simple and user-friendly game.
+5. Software Requirement Analysis
+For a Python project on rock paper scissors with GUI using Tkinter, the following are the key components of software requirement analysis:
+5.1	Introduction
+ The introduction section should provide a brief overview of the project and its purpose. It should also include any relevant background information or context that will help to frame the software requirements.
+5.2General Description
+This section should describe the general features and functionality of the software application. It should provide a high-level overview of what the application does, how it works, and what its intended use cases are. Some of the general features and requirements for a rock paper scissors game with GUI might include:
+a. A graphical user interface that allows users to play the game b. The ability to choose between rock, paper, or scissors c. The ability to play against the computer or another player d. A scoring system that keeps track of wins, losses, and ties e. Sound effects or other visual feedback to enhance the user experience
+5.3	Specific Requirements
+This section should provide a detailed breakdown of the specific requirements for the software application. It should include functional requirements, such as what actions the user can take and how the software should respond, as well as non-functional requirements, such as performance and usability.
+a. User Interface Requirements: This section should detail the specific requirements for the graphical user interface, including layout, navigation, and visual design. For example, the game might require a main screen that displays the rules and options for playing, as well as separate screens for choosing the player type and making selections during gameplay.
+b. Game Logic Requirements: This section should detail the specific requirements for the game logic, including how the computer opponent should make choices, how scoring should be calculated, and how ties should be handled.
+c. Performance Requirements: This section should detail any specific performance requirements, such as how quickly the game must respond to user actions, how much memory or processing power it requires, and what the maximum number of players or rounds can be.
+d. Usability Requirements: This section should detail any specific usability requirements, such as the need for clear and concise instructions, intuitive navigation, and error handling.
+In summary, software requirement analysis is a crucial step in the software development process that helps to ensure that the resulting application meets the needs of its intended users. For a Python project on rock paper scissors with GUI using Tkinter, it is important to define the general features and functionality of the application, as well as the specific requirements for the user interface, game logic, performance, and usability.
+
+
+
+6.	Design:
+6.1 System Design
+ System design is the process of defining the architecture, components, and interfaces of a software application. It involves translating the requirements defined in the previous stage into a concrete design that can be used to guide the development process.
+For a Python project on rock paper scissors with GUI using Tkinter, the system design might involve the following:
+1.	User Interface Design: This involves designing the layout and components of the graphical user interface using Tkinter. The design should be intuitive, easy to navigate, and visually appealing to the user.
+2.	Game Logic Design: This involves designing the algorithm that will be used to determine the winner of each round, as well as the scoring system that will be used to keep track of the game progress.
+3.	Input and Output Design: This involves designing the input and output components of the system. For example, the system might take input from the user through button clicks or key presses, and output information through graphical feedback or text displays.
+4.	Component Design: This involves designing the individual components of the system, such as the game engine, player selection screen, and results screen. Each component should be designed to be modular and easily integrated with the rest of the system.
+
+
+
+
+
+7.	Testing:
+7.1Functional Testing
+ Functional testing is a type of software testing that checks whether the system or software application meets the specified requirements and performs the functions as intended. It ensures that the software application is working as expected from a user's perspective.
+For a Python project on rock-paper-scissors with GUI using Tkinter, some functional testing scenarios might include:
+1.	Testing whether the game works as intended when a user clicks on the rock, paper, or scissors button.
+2.	Testing whether the game correctly identifies the winner of each round.
+3.	Testing whether the game ends and displays the final score when the user reaches a certain number of points.
+4.	Testing whether the GUI components are displayed properly and are functional.
+5.	Testing whether the game handles various edge cases, such as unexpected user inputs or errors.
+7.2	structural testing
+Structural testing, also known as white-box testing, is a type of software testing that examines the internal structure of the software application or system. It is focused on checking the code implementation of the software application, and ensuring that it works as expected under various conditions.
+For a Python project on rock-paper-scissors with GUI using Tkinter, some structural testing scenarios might include:
+1.	Testing whether the code is written properly and follows the best practices of Python programming.
+2.	Testing whether the code has any syntax or runtime errors.
+3.	Testing whether the code is optimized and efficient, and does not have any performance issues.
+4.	Testing whether the code has adequate exception handling, and gracefully handles errors.
+5.	Testing whether the code is modular and maintainable, and can be easily extended or modified in the future.
+
+8.	User Manual: Rock-Paper-Scissors Game
+Introduction: Rock-Paper-Scissors is a classic game that is enjoyed by people of all ages. This Python project is a simple implementation of the game, with a graphical user interface using Tkinter. The game can be played against the computer, and the winner is determined based on the standard rock-paper-scissors rules.
+System Requirements: To run the game, you need to have Python 3 installed on your system. Additionally, you need to have the Tkinter library installed, which should be included by default with most Python installations.
+Installation: To install the game, simply download the Python file (filename.py) and save it to your local directory.
+Usage: To start the game, open a terminal or command prompt window, navigate to the directory where the file is saved, and run the command "python filename.py" (without quotes).
+Gameplay: Once the game has started, you will see a graphical user interface with buttons for "Rock", "Paper", and "Scissors". To make your choice, simply click on the corresponding button. The computer will make its choice randomly, and the winner of the round will be displayed on the screen. The first player to reach a specified number of wins (usually 3 or 5) is declared the winner of the game.
+Features: The Rock-Paper-Scissors game developed using Python and Tkinter has the following features:
+•	Simple and easy to use graphical user interface.
+•	Can be played against the computer.
+•	Winner is determined based on the standard rock-paper-scissors rules.
+•	Results of each round and the overall winner are displayed on the screen.
+•	The game can be easily extended or modified by adding new features or rules.
+Troubleshooting: If you experience any issues while playing the game, try the following troubleshooting steps:
+•	Make sure that you have the correct version of Python installed on your system.
+•	Ensure that the Tkinter library is installed properly.
+•	Check that you have saved the Python file in the correct directory.
+•	If the game is not working as expected, try restarting the program or your system.
+Conclusion: The Python project on rock-paper-scissors with GUI using Tkinter is a simple and fun implementation of the classic game. The game is easy to play, and the graphical user interface makes it accessible to people of all ages. The project can be easily extended or modified, and provides a good starting point for learning Python programming and developing graphical user interfaces.
