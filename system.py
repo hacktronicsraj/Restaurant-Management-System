@@ -1,10 +1,6 @@
 from tkinter import*
 import random
 import time
-from twilio.rest import Client
-from PIL import Image, ImageTk
-
-
 
 root = Tk()
 
@@ -32,7 +28,7 @@ lblinfo.grid(row=1,column=0)
 text_Input=StringVar()
 operator =""
 
-txtdisplay = Entry(f2,font=('ariel' ,20,'bold'), textvariable=text_Input , bd=5 ,insertwidth=7 ,bg="white",justify='right')
+txtdisplay = Entry(f2,font=('ariel' ,20,'bold'), textvariable=text_Input , bd=5 ,insertwidth=7 ,bg="black",justify='right')
 txtdisplay.grid(columnspan=4)
 
 def  btnclick(numbers):
@@ -104,55 +100,55 @@ def reset():
     Cheese_burger.set("")
 
 
-btn7=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="7",bg="powder blue", command=lambda: btnclick(7) )
+btn7=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="7",bg="black", command=lambda: btnclick(7) )
 btn7.grid(row=2,column=0)
 
-btn8=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="8",bg="powder blue", command=lambda: btnclick(8) )
+btn8=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="8",bg="black", command=lambda: btnclick(8) )
 btn8.grid(row=2,column=1)
 
-btn9=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="9",bg="powder blue", command=lambda: btnclick(9) )
+btn9=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="9",bg="black", command=lambda: btnclick(9) )
 btn9.grid(row=2,column=2)
 
-Addition=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="+",bg="powder blue", command=lambda: btnclick("+") )
+Addition=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="+",bg="black", command=lambda: btnclick("+") )
 Addition.grid(row=2,column=3)
 #---------------------------------------------------------------------------------------------
-btn4=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="4",bg="powder blue", command=lambda: btnclick(4) )
+btn4=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="4",bg="black", command=lambda: btnclick(4) )
 btn4.grid(row=3,column=0)
 
-btn5=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="5",bg="powder blue", command=lambda: btnclick(5) )
+btn5=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="5",bg="black", command=lambda: btnclick(5) )
 btn5.grid(row=3,column=1)
 
-btn6=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="6",bg="powder blue", command=lambda: btnclick(6) )
+btn6=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="6",bg="black", command=lambda: btnclick(6) )
 btn6.grid(row=3,column=2)
 
-Substraction=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="-",bg="powder blue", command=lambda: btnclick("-") )
+Substraction=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="-",bg="black", command=lambda: btnclick("-") )
 Substraction.grid(row=3,column=3)
 #-----------------------------------------------------------------------------------------------
-btn1=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="1",bg="powder blue", command=lambda: btnclick(1) )
+btn1=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="1",bg="black", command=lambda: btnclick(1) )
 btn1.grid(row=4,column=0)
 
-btn2=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="2",bg="powder blue", command=lambda: btnclick(2) )
+btn2=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="2",bg="black", command=lambda: btnclick(2) )
 btn2.grid(row=4,column=1)
 
-btn3=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="3",bg="powder blue", command=lambda: btnclick(3) )
+btn3=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="3",bg="black", command=lambda: btnclick(3) )
 btn3.grid(row=4,column=2)
 
-multiply=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="*",bg="powder blue", command=lambda: btnclick("*") )
+multiply=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="*",bg="black", command=lambda: btnclick("*") )
 multiply.grid(row=4,column=3)
 #------------------------------------------------------------------------------------------------
-btn0=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="0",bg="powder blue", command=lambda: btnclick(0) )
+btn0=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="0",bg="black", command=lambda: btnclick(0) )
 btn0.grid(row=5,column=0)
 
-btnc=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="c",bg="powder blue", command=clrdisplay)
+btnc=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="c",bg="black", command=clrdisplay)
 btnc.grid(row=5,column=1)
 
-btnequal=Button(f2,padx=16,pady=16,bd=4,width = 16, fg="black", font=('ariel', 20 ,'bold'),text="=",bg="powder blue",command=eqals)
+btnequal=Button(f2,padx=16,pady=16,bd=4,width = 16, fg="black", font=('ariel', 20 ,'bold'),text="=",bg="black",command=eqals)
 btnequal.grid(columnspan=4)
 
-Decimal=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text=".",bg="powder blue", command=lambda: btnclick(".") )
+Decimal=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text=".",bg="black", command=lambda: btnclick(".") )
 Decimal.grid(row=5,column=2)
 
-Division=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="/",bg="powder blue", command=lambda: btnclick("/") )
+Division=Button(f2,padx=16,pady=16,bd=4, fg="black", font=('ariel', 20 ,'bold'),text="/",bg="black", command=lambda: btnclick("/") )
 Division.grid(row=5,column=3)
 status = Label(f2,font=('aria', 15, 'bold'),width = 16, text="-By Rajashekar",bd=2,relief=SUNKEN)
 status.grid(row=7,columnspan=3)
@@ -174,78 +170,84 @@ Cheese_burger = StringVar()
 
 lblreference = Label(f1, font=( 'aria' ,16, 'bold' ),text="Order No.",fg="steel blue",bd=10,anchor='w')
 lblreference.grid(row=0,column=0)
-txtreference = Entry(f1,font=('ariel' ,16,'bold'), textvariable=rand , bd=6,insertwidth=4,bg="powder blue" ,justify='left')
+txtreference = Entry(f1,font=('ariel' ,16,'bold'), textvariable=rand , bd=6,insertwidth=4,bg="black" ,justify='left')
 txtreference.grid(row=0,column=1)
 
-lblfries = Label(f1, font=( 'aria' ,16, 'bold' ),text="Fries Meal",fg="steel blue",bd=10,anchor='w')
+lblfries = Label(f1, font=( 'aria' ,16, 'bold' ),text="Chicken Biryani",fg="steel blue",bd=10,anchor='w')
 lblfries.grid(row=1,column=0)
-txtfries = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Fries , bd=6,insertwidth=4,bg="powder blue" ,justify='left')
+txtfries = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Fries , bd=6,insertwidth=4,bg="black" ,justify='left')
 txtfries.grid(row=1,column=1)
 
-lblLargefries = Label(f1, font=( 'aria' ,16, 'bold' ),text="Lunch Meal",fg="steel blue",bd=10,anchor='w')
+lblLargefries = Label(f1, font=( 'aria' ,16, 'bold' ),text="Mutton Biryani",fg="steel blue",bd=10,anchor='w')
 lblLargefries.grid(row=2,column=0)
-txtLargefries = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Largefries , bd=6,insertwidth=4,bg="powder blue" ,justify='left')
+txtLargefries = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Largefries , bd=6,insertwidth=4,bg="black" ,justify='left')
 txtLargefries.grid(row=2,column=1)
 
 
-lblburger = Label(f1, font=( 'aria' ,16, 'bold' ),text="Burger Meal",fg="steel blue",bd=10,anchor='w')
+lblburger = Label(f1, font=( 'aria' ,16, 'bold' ),text="Mutton Curry",fg="steel blue",bd=10,anchor='w')
 lblburger.grid(row=3,column=0)
-txtburger = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Burger , bd=6,insertwidth=4,bg="powder blue" ,justify='left')
+txtburger = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Burger , bd=6,insertwidth=4,bg="black" ,justify='left')
 txtburger.grid(row=3,column=1)
 
-lblFilet = Label(f1, font=( 'aria' ,16, 'bold' ),text="Pizza Meal",fg="steel blue",bd=10,anchor='w')
+lblFilet = Label(f1, font=( 'aria' ,16, 'bold' ),text="Veg Palao",fg="steel blue",bd=10,anchor='w')
 lblFilet.grid(row=4,column=0)
-txtFilet = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Filet , bd=6,insertwidth=4,bg="powder blue" ,justify='left')
+txtFilet = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Filet , bd=6,insertwidth=4,bg="black" ,justify='left')
 txtFilet.grid(row=4,column=1)
 
-lblCheese_burger = Label(f1, font=( 'aria' ,16, 'bold' ),text="Cheese burger",fg="steel blue",bd=10,anchor='w')
+lblCheese_burger = Label(f1, font=( 'aria' ,16, 'bold' ),text="Pulihora",fg="steel blue",bd=10,anchor='w')
 lblCheese_burger.grid(row=5,column=0)
-txtCheese_burger = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Cheese_burger , bd=6,insertwidth=4,bg="powder blue" ,justify='left')
+txtCheese_burger = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Cheese_burger , bd=6,insertwidth=4,bg="black" ,justify='left')
 txtCheese_burger.grid(row=5,column=1)
 
 #--------------------------------------------------------------------------------------
 lblDrinks = Label(f1, font=( 'aria' ,16, 'bold' ),text="Drinks",fg="steel blue",bd=10,anchor='w')
 lblDrinks.grid(row=0,column=2)
-txtDrinks = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Drinks , bd=6,insertwidth=4,bg="powder blue" ,justify='left')
+txtDrinks = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Drinks , bd=6,insertwidth=4,bg="black" ,justify='left')
 txtDrinks.grid(row=0,column=3)
 
-lblcost = Label(f1, font=( 'aria' ,16, 'bold' ),text="cost",fg="steel blue",bd=10,anchor='w')
+lblcost = Label(f1, font=( 'aria' ,16, 'bold' ),text="Cost",fg="steel blue",bd=10,anchor='w')
 lblcost.grid(row=1,column=2)
-txtcost = Entry(f1,font=('ariel' ,16,'bold'), textvariable=cost , bd=6,insertwidth=4,bg="powder blue" ,justify='left')
+txtcost = Entry(f1,font=('ariel' ,16,'bold'), textvariable=cost , bd=6,insertwidth=4,bg="black" ,justify='left')
 txtcost.grid(row=1,column=3)
 
 lblService_Charge = Label(f1, font=( 'aria' ,16, 'bold' ),text="Service Charge",fg="steel blue",bd=10,anchor='w')
 lblService_Charge.grid(row=2,column=2)
-txtService_Charge = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Service_Charge , bd=6,insertwidth=4,bg="powder blue" ,justify='left')
+txtService_Charge = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Service_Charge , bd=6,insertwidth=4,bg="black" ,justify='left')
 txtService_Charge.grid(row=2,column=3)
 
 lblTax = Label(f1, font=( 'aria' ,16, 'bold' ),text="Tax",fg="steel blue",bd=10,anchor='w')
 lblTax.grid(row=3,column=2)
-txtTax = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Tax , bd=6,insertwidth=4,bg="powder blue" ,justify='left')
+txtTax = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Tax , bd=6,insertwidth=4,bg="black" ,justify='left')
 txtTax.grid(row=3,column=3)
 
 lblSubtotal = Label(f1, font=( 'aria' ,16, 'bold' ),text="Subtotal",fg="steel blue",bd=10,anchor='w')
 lblSubtotal.grid(row=4,column=2)
-txtSubtotal = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Subtotal , bd=6,insertwidth=4,bg="powder blue" ,justify='left')
+txtSubtotal = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Subtotal , bd=6,insertwidth=4,bg="black" ,justify='left')
 txtSubtotal.grid(row=4,column=3)
 
 lblTotal = Label(f1, font=( 'aria' ,16, 'bold' ),text="Total",fg="steel blue",bd=10,anchor='w')
 lblTotal.grid(row=5,column=2)
-txtTotal = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Total , bd=6,insertwidth=4,bg="powder blue" ,justify='left')
+txtTotal = Entry(f1,font=('ariel' ,16,'bold'), textvariable=Total , bd=6,insertwidth=4,bg="black" ,justify='left')
 txtTotal.grid(row=5,column=3)
 
 #-----------------------------------------buttons------------------------------------------
 lblTotal = Label(f1,text="---------------------",fg="white")
 lblTotal.grid(row=6,columnspan=3)
 
-btnTotal=Button(f1,padx=16,pady=8, bd=10 ,fg="black",font=('ariel' ,16,'bold'),width=10, text="TOTAL", bg="powder blue",command=Ref)
+btnTotal=Button(f1,padx=16,pady=8, bd=10 ,fg="black",font=('ariel' ,16,'bold'),width=10, text="TOTAL", bg="black",command=Ref)
 btnTotal.grid(row=7, column=1)
 
-btnreset=Button(f1,padx=16,pady=8, bd=10 ,fg="black",font=('ariel' ,16,'bold'),width=10, text="RESET", bg="powder blue",command=reset)
+btnreset=Button(f1,padx=16,pady=8, bd=10 ,fg="black",font=('ariel' ,16,'bold'),width=10, text="RESET", bg="black",command=reset)
 btnreset.grid(row=7, column=2)
 
-btnexit=Button(f1,padx=16,pady=8, bd=10 ,fg="black",font=('ariel' ,16,'bold'),width=10, text="EXIT", bg="powder blue",command=qexit)
+btnexit=Button(f1,padx=16,pady=8, bd=10 ,fg="black",font=('ariel' ,16,'bold'),width=10, text="EXIT", bg="black",command=qexit)
 btnexit.grid(row=7, column=3)
+
+
+
+
+
+
 
 def price():
     roo = Tk()
@@ -284,7 +286,7 @@ def price():
 
     roo.mainloop()
 
-btnprice=Button(f1,padx=16,pady=8, bd=10 ,fg="black",font=('ariel' ,16,'bold'),width=10, text="PRICE", bg="powder blue",command=price)
+btnprice=Button(f1,padx=16,pady=8, bd=10 ,fg="black",font=('ariel' ,16,'bold'),width=10, text="PRICE", bg="black",command=price)
 btnprice.grid(row=7, column=0)
 
 root.mainloop()
